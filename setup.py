@@ -2,7 +2,16 @@ import sys
 from cx_Freeze import setup, Executable
 
 # Dependencies are automatically detected, but it might need fine tuning.
-build_exe_options = {"excludes": ["tkinter", "pytz", "unittest", "html", "http", "numpy", "pydoc_data", "email", "logging", "PIL"]}
+build_exe_options = {
+    "excludes": ["tkinter", "pytz", "unittest", "html", "http", "numpy", "pydoc_data", "email", "logging", "PIL"],
+    "include_files": [
+        ["TPL/cx_Freeze"]*2,
+        ["TPL/MuPDF"]*2,
+        ["TPL/PyMuPDF"]*2,
+        ["TPL/Python"]*2,
+        "LICENSE"
+    ]
+}
 
 setup(  name = "PDF Toolkit",
         version = "0.2",
