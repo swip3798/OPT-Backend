@@ -5,7 +5,7 @@ from cx_Freeze import setup, Executable
 build_exe_options = {"excludes": ["tkinter", "pytz", "unittest", "html", "http", "numpy", "pydoc_data", "email", "logging", "PIL"]}
 
 setup(  name = "PDF Toolkit",
-        version = "0.1",
+        version = "0.2",
         description = "PDF Toolkit using PyMuPDF!",
         options = {"build_exe": build_exe_options},
         executables = [
