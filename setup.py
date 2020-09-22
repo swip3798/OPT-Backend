@@ -13,9 +13,9 @@ build_exe_options = {
     ]
 }
 
-setup(  name = "PDF Toolkit",
+setup(  name = "OPT-Backend",
         version = "0.2",
-        description = "PDF Toolkit using PyMuPDF!",
+        description = "PDF manipulation backend of OPT using PyMuPDF!",
         options = {"build_exe": build_exe_options},
         executables = [
             Executable("renderimages.py", base=None), 
