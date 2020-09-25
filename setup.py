@@ -14,7 +14,7 @@ build_exe_options = {
 }
 
 setup(  name = "OPT-Backend",
-        version = "0.2.1",
+        version = "0.3.0",
         description = "PDF manipulation backend of OPT using PyMuPDF!",
         options = {"build_exe": build_exe_options},
         executables = [
@@ -24,4 +24,5 @@ setup(  name = "OPT-Backend",
             Executable("pageselect.py", base=None),
             Executable("deflate.py", base=None),
             Executable("docinfo.py", base=None),
+            Executable("getdir.py", base=None),
         ])
