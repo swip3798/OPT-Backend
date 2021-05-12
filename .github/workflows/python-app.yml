@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.9
+    - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: 3.8
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -32,4 +32,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
        name: Build
-       path: dist/build-python-3.9.4-64bit
+       path: dist/build-python-3.8.10-64bit
