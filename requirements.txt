@@ -1,0 +1,2 @@
+PyEasyEmbed==0.1.2
+PyMuPDF==1.18.13

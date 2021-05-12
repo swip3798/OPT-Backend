@@ -1,2 +1,16 @@
+# Example files
 *.pdf
-build
+*.jpg
+*.jpeg
+
+# venv stuff
+/Scripts
+/Include
+/Lib
+
+# emfreeze dist folder
+/dist
+
+# standard python stuff
+*.pyc
+__pycache__
