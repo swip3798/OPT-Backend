@@ -29,3 +29,7 @@ jobs:
     - name: Build using emfreeze
       run: |
         emfreeze
+    - uses: actions/upload-artifact@v2
+      with:
+       name: Build
+       path: dist/build-python-3.9.4-64bit
