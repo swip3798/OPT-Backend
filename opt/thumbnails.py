@@ -8,10 +8,7 @@ def render_doc_thumbnail(data):
     pix = doc[0].getPixmap(alpha = False)
     pix.shrink(2)
     data = pix.tobytes()
-    return {
-        "thumbnail": b64.b64encode(data).decode("ascii"),
-        "format": "b64"
-    }
+    return data
 
 @server.command
 def render_page_thumbnails(data):
