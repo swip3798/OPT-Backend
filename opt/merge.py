@@ -8,7 +8,7 @@ def merge_files(data):
     first_doc = docs[0]
     for doc in docs[1:]:
         first_doc.insert_pdf(doc)
-    first_doc.save(data["output_file"])
+    first_doc.save(data["output_file"], garbage = 3)
     first_doc.close()
     return {
         "output_file": data["output_file"]
