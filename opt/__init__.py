@@ -1,6 +1,6 @@
 import EasyEmbed as EE
 
-server = EE.HttpCommandServer(version="0.5.3")
+server = EE.HttpCommandServer(version="0.5.4")
 
 from .merge import merge_files
 from .thumbnails import render_doc_thumbnail, render_page_thumbnails
