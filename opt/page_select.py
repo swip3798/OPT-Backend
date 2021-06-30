@@ -9,6 +9,10 @@ def select_pages(data):
     doc.select(page_sequence)
     doc.save(data["output_file"] + "_tmp", garbage = 3, )
     doc.close()
+    try:
+        os.remove(data["output_file"])
+    except:
+        pass
     os.rename(data["output_file"] + "_tmp", data["output_file"])
     return {
         "output_file": data["output_file"]
