@@ -28,7 +28,7 @@ jobs:
         .\Scripts\pip install -r requirements.txt
     - name: Build using emfreeze
       run: |
-        emfreeze
+        emfreeze --post-build-script post_build.bat
     - uses: actions/upload-artifact@v2
       with:
        name: opt-backend-build
